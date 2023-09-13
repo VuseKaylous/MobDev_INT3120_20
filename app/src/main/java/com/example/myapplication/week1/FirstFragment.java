@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.week1;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,11 +8,11 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
-import com.example.myapplication.databinding.FragmentFirstBinding;
+import com.example.myapplication.databinding.Week1Binding;
 
 public class FirstFragment extends Fragment {
 
-private FragmentFirstBinding binding;
+private Week1Binding binding;
 
     @Override
     public View onCreateView(
@@ -20,7 +20,7 @@ private FragmentFirstBinding binding;
             Bundle savedInstanceState
     ) {
 
-      binding = FragmentFirstBinding.inflate(inflater, container, false);
+      binding = Week1Binding.inflate(inflater, container, false);
       return binding.getRoot();
 
     }

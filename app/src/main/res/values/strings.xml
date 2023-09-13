@@ -10,4 +10,8 @@
     <string name="lorem_ipsum">
         Hello world!
     </string>
+    <string name="donation_label">Welcome Homer</string>
+    <string name="please_give_generously">Please Give Generously</string>
+    <string name="paypal">PayPal</string>
+    <string name="direct">Direct</string>
 </resources>
