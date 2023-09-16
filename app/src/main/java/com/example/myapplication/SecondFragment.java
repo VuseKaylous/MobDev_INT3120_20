@@ -1,4 +1,4 @@
-package com.example.myapplication.week1;
+package com.example.myapplication;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,11 +8,13 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
-import com.example.myapplication.databinding.Week1Binding;
 
-public class FirstFragment extends Fragment {
+import com.example.myapplication.R;
+import com.example.myapplication.databinding.FragmentSecondBinding;
 
-private Week1Binding binding;
+public class SecondFragment extends Fragment {
+
+private FragmentSecondBinding binding;
 
     @Override
     public View onCreateView(
@@ -20,7 +22,7 @@ private Week1Binding binding;
             Bundle savedInstanceState
     ) {
 
-      binding = Week1Binding.inflate(inflater, container, false);
+      binding = FragmentSecondBinding.inflate(inflater, container, false);
       return binding.getRoot();
 
     }
@@ -28,11 +30,11 @@ private Week1Binding binding;
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-//        binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
+//        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                NavHostFragment.findNavController(FirstFragment.this)
-//                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+//                NavHostFragment.findNavController(SecondFragment.this)
+//                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
 //            }
 //        });
     }

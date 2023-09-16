@@ -1,4 +1,4 @@
-package com.example.myapplication.week2;
+package com.example.myapplication;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,10 +7,12 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
+import com.example.myapplication.databinding.Week1Binding;
 
-import com.example.myapplication.databinding.Week2Binding;
+public class FirstFragment extends Fragment {
 
-public class Donation extends Fragment {private Week2Binding binding;
+private Week1Binding binding;
 
     @Override
     public View onCreateView(
@@ -18,8 +20,8 @@ public class Donation extends Fragment {private Week2Binding binding;
             Bundle savedInstanceState
     ) {
 
-        binding = Week2Binding.inflate(inflater, container, false);
-        return binding.getRoot();
+      binding = Week1Binding.inflate(inflater, container, false);
+      return binding.getRoot();
 
     }
 
@@ -35,9 +37,10 @@ public class Donation extends Fragment {private Week2Binding binding;
 //        });
     }
 
-    @Override
+@Override
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
     }
+
 }
