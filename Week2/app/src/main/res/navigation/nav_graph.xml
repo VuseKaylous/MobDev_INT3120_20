@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.example.myapplication.FirstFragment"
-        android:label="Donation 1.5"
-        tools:layout="@layout/week1" >
+        android:label="Donation"
+        tools:layout="@layout/week2" >
 
 <!--        <action-->
 <!--            android:id="@+id/action_FirstFragment_to_SecondFragment"-->
