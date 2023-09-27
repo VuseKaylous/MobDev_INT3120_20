@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.myapplication.FirstFragment"
+        android:name="com.example.myapplication.Linear"
         android:label="Donation"
-        tools:layout="@layout/week2" >
+        tools:layout="@layout/constraint" >
 
 <!--        <action-->
 <!--            android:id="@+id/action_FirstFragment_to_SecondFragment"-->

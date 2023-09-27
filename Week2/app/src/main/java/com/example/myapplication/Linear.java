@@ -7,12 +7,16 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
-import com.example.myapplication.databinding.Week1Binding;
 
-public class FirstFragment extends Fragment {
+import com.example.myapplication.databinding.*;
 
-private Week1Binding binding;
+public class Linear extends Fragment {
+
+private LinearBinding linearBinding;
+private ConstraintBinding constraintBinding;
+private RelativeBinding relativeBinding;
+private TableBinding tableBinding;
+
 
     @Override
     public View onCreateView(
@@ -20,8 +24,8 @@ private Week1Binding binding;
             Bundle savedInstanceState
     ) {
 
-      binding = Week1Binding.inflate(inflater, container, false);
-      return binding.getRoot();
+      linearBinding = LinearBinding.inflate(inflater, container, false);
+      return linearBinding.getRoot();
 
     }
 
@@ -40,7 +44,7 @@ private Week1Binding binding;
 @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null;
+        linearBinding = null;
     }
 
 }
