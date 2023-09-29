@@ -42,8 +42,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+//        binding = ActivityMainBinding.inflate(getLayoutInflater());
+//        setContentView(binding.getRoot());
 
         this.editTextFullName = (EditText) this.findViewById(R.id.editText_fullName);
         this.buttonSendMessage = (Button) this.findViewById(R.id.button_sendMessage);
