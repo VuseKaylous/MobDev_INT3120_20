@@ -28,14 +28,13 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     private static final int MY_REQUEST_CODE = 69;
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
     private Button buttonSendMessage;
     private EditText editTextFullName;
-    private Activity greetingActivity;
     private TextView textFeedback;
 
     @Override

@@ -18,6 +18,10 @@ public class GreetingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        setContentView(R.layout.greeting_activity);
+        this.buttonBack = (Button) this.findViewById(R.id.button_back);
+        this.textViewMessage = (TextView) this.findViewById(R.id.textView_message);
+
         this.buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
