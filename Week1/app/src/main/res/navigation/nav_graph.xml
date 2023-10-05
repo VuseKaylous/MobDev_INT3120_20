@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.example.myapplication.FirstFragment"
-        android:label="Donation 1.5"
+        android:label="Hello world!"
         tools:layout="@layout/week1" >
 
 <!--        <action-->
